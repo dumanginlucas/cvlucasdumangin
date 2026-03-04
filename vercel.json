@@ -1,3 +1,7 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/", "destination": "/client/public/index.html" },
+    { "source": "/(.*)", "destination": "/client/public/$1" }
+  ]
 }
