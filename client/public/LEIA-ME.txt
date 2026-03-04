@@ -1,0 +1,1 @@
+Mantenha seu index.html e a pasta assets aqui dentro.
