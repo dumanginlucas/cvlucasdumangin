@@ -1175,7 +1175,8 @@ section,
 .about .content-wrapper .skills-showcase .skills-list .skill-item .skill-info {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  gap: 16px;
   margin-bottom: 10px;
 }
 
@@ -1183,12 +1184,29 @@ section,
   font-size: 15px;
   font-weight: 600;
   color: var(--heading-color);
+  flex: 1 1 auto;
 }
 
 .about .content-wrapper .skills-showcase .skills-list .skill-item .skill-info .skill-percent {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 700;
   color: var(--accent-color);
+  white-space: nowrap;
+  text-align: right;
+  letter-spacing: 0.2px;
+}
+
+@media (max-width: 768px) {
+  .about .content-wrapper .skills-showcase .skills-list .skill-item .skill-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .about .content-wrapper .skills-showcase .skills-list .skill-item .skill-info .skill-percent {
+    white-space: normal;
+    text-align: left;
+  }
 }
 
 .about .content-wrapper .skills-showcase .skills-list .skill-item .progress {
